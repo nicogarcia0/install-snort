@@ -3,7 +3,7 @@
 red="\e[;31m"
 green="\e[;32m"
 default="\e[0m"
-if [[$1="-i"]]
+if [$1="-i"]
 then
     apt update
     echo -e "Instalando Snort..."
