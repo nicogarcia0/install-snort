@@ -3,8 +3,6 @@
 red="\e[;31m"
 green="\e[;32m"
 default="\e[0m"
-if [$1="-i"]
-then
     apt update
     echo -e "Instalando Snort..."
     echo -e "Instalando dependencias... [ En proceso ]"
@@ -69,7 +67,3 @@ then
     echo -e "Instalando Gperftools [ ${green}Hecho${default} ]"
     echo -e "Descargando el paquete de Snort [ ${green}Hecho${default} ]"
     echo -e "${green}Instalacion completada${default}"
-    exit
-else
-    echo -e "${red}Especifica una funcion ${default}"
-fi
