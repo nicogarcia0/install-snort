@@ -1,8 +1,8 @@
 #!/bin/bash
 
-$red="\e[31m"
-$green="\e[32m"
-$default="\e[0m"
+red="\e[;31m"
+green="\e[;32m"
+default="\e[0m"
 if [[$1='-i']]
 then
     apt update
